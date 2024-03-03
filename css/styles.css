@@ -577,7 +577,20 @@ color: #404bbf;;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding-left: 38px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
+
+.review-form-input:focus {
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+}
+
+.review-form-input:focus +.review-form-icon{
+    fill: #4d5ae5;
+    stroke: #4d5ae5;
+}
+
 .review-form-fiald-wrapper{
     margin-bottom: 8px;
 }
@@ -585,7 +598,7 @@ color: #404bbf;;
     display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -599,9 +612,66 @@ color: #404bbf;;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-   stroke: #0c0c0c;
-   fill: #0c0c0c;
+    stroke: #0c0c0c;
+    fill: #0c0c0c;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.review-form-checkbox-wrapper {}
+.review-form-textarea{
+    height: 120px;
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-textarea:focus{
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+}
 
-.review-form-submit-btm {}
+.review-form-textarea::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.policy-privasy-label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+.review-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
+
+.policy-privasy-href{
+    line-height: 1.33;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+}
+
+.review-form-submit-btm{
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    background-color: #4D5AE5;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form{
+
+}
