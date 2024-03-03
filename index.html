@@ -399,15 +399,20 @@
                         </svg>
                     </div>
                 </div>
-                <div class="review-form-fiald-wrapper">
+                <div class="review-form-fiald-wrapper review-form-comment">
                     <label for="user-comment" class="review-form-fiald-label">Comment</label>
-                    <textarea class="review-form-textarea" name="" id="user-comment" placeholder="Text input"></textarea>
+                    <textarea class="review-form-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 </div>
-                <div class="review-form-checkbox-wrapper">
-                    <input  type="checkbox" id="policy-privasy" name="policy-privasy" value="true" required>
-                    <label class="policy-privasy-label"  for="policy-privasy">
+                <div class="review-form-checkbox-wrapper ">
+                    <input  type="checkbox" id="user-privacy" name="policy-privasy" value="true" required>
+                    <label class="policy-privasy-label"  for="user-privacy">
+                        <span class="checkbox-policy-privasy">
+                            <svg class="review-form-icon" width="10" height="8" aria-label="close icon">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </span>
                         I accept the terms and conditions of the 
-                        <a class="policy-privasy-href" href="#">Privacy Policy</a> 
+                         <a class="policy-privasy" href="#">Privacy Policy</a>
                     </label>
                 </div>
                 <button class="review-form-submit-btm" type="submit">Send</button>
