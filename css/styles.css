@@ -524,7 +524,8 @@ color: #404bbf;;
     color: #2e2f42;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 72px 24px 24px 24px;
 }
 
 .close-icon {
@@ -549,7 +550,6 @@ color: #404bbf;;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
 .modal-close-btn:hover,
 .modal-close-btn:focus{
     background-color: #404bbf;
@@ -559,9 +559,49 @@ color: #404bbf;;
 .modal-close-btn:hover > .close-icon,
 .modal-close-btn:focus > .close-icon {
     fill: #FFFFFF;
-
 }
 
-.text-form{
-    
+.form-descreption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
 }
+
+.review-form-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    padding-left: 38px;
+}
+.review-form-fiald-wrapper{
+    margin-bottom: 8px;
+}
+.review-form-fiald-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+.review-form-fiald-input{
+    position: relative;
+}
+
+.review-form-icon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+   stroke: #0c0c0c;
+   fill: #0c0c0c;
+}
+.review-form-checkbox-wrapper {}
+
+.review-form-submit-btm {}
